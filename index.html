@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Clothing Store</title>
+  <link rel="stylesheet" href="store.css">
+</head>
+<body>
+  <header>
+    <h1>My Clothing Store 🛍️</h1>
+    <nav>
+      <a href="#shirts">Shirts</a>
+      <a href="#trousers">Trousers</a>
+      <a href="#shoes">Shoes</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+
+
+ 
+  <section id="shirts" >
+    <h2>Shirts 👕</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="Casual Shirt.png" alt="Casual Shirt">
+        <h3>Casual Shirt</h3>
+        <p>$25</p>
+        <button onclick="addToCart('Casual Shirt', 25)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Formal Shirt.png" alt="Formal Shirt">
+        <h3>Formal Shirt</h3>
+        <p>$35</p>
+        <button onclick="addToCart('Formal Shirt', 35)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="printed shirts.png" alt="Printed Shirt">
+        <h3>Printed Shirt</h3>
+        <p>$30</p>
+        <button onclick="addToCart('Printed Shirt', 30)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="trousers" >
+    <h2>Trousers 👖</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="jeans.png" alt="Jeans">
+        <h3>Jeans</h3>
+        <p>$40</p>
+        <button onclick="addToCart('Jeans', 40)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Formal Pants.jpg" alt="Formal Pants">
+        <h3>Formal Pants</h3>
+        <p>$50</p>
+        <button onclick="addToCart('Formal Pants', 50)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Cargo Trousers.png" alt="Cargo Trousers">
+        <h3>Cargo Trousers</h3>
+        <p>$45</p>
+        <button onclick="addToCart('Cargo Trousers', 45)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="shoes" >
+    <h2>Shoes 👟</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="Sneakers.png" alt="Sneakers">
+        <h3>Sneakers</h3>
+        <p>$60</p>
+        <button onclick="addToCart('Sneakers', 60)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Formal Shoes.png" alt="Formal Shoes">
+        <h3>Formal Shoes</h3>
+        <p>$70</p>
+        <button onclick="addToCart('Formal Shoes', 70)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Sports Shoes.png" alt="Sports Shoes">
+        <h3>Sports Shoes</h3>
+        <p>$55</p>
+        <button onclick="addToCart('Sports Shoes', 55)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Total 👩🏻‍🦱: $<span id="total">0</span></strong></p>
+  </section>
+
+  <script src="store.js"></script>
+</body>
+</html>
